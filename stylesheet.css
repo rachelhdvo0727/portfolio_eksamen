@@ -37,6 +37,23 @@ header {
     width: 100%;
 }
 
+h1 {
+    font-family: 'Monoton', cursive;
+    color: var(--highlight-color);
+    font-size: 7.5vw;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    color: var(--highlight-color);
+    font-size: 5vw;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    color: var(--accent-color);
+    font-size: 3.5vw;
+}
 
 /*-----------------navigation menu-------------------*/
 #menu {
@@ -143,5 +160,84 @@ nav a:active {
     height: 159.8vw;
     background-image: url(assets/splashbillede1.png);
     background-size: cover;
-    background-position: 43% 40%;
+    background-position: 45% 0%;
+}
+
+#om {
+    /*display: flex;
+    flex-wrap: wrap;*/
+    margin: 2vw 2vw 3vw 2vw;
+    padding: 1.5vw;
+
+}
+
+#om p {
+    font-family: 'Roboto', sans-serif;
+    color: var(--accent-color);
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 120vw;
+    margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #000000;
+    top: 0;
+    bottom: 0;
+    left: 25vw;
+    margin-left: -3px;
+}
+
+/* The circles on the timeline */
+.container::after {
+    content: '';
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+    right: 0vw;
+    background-color: var(--highlight-color);
+    border: 1vw solid #000000;
+    top: 5vw;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Fix the circle for containers on the right side */
+.right {
+    left: 25vw;
+}
+
+.left {
+    left: -8vw;
+}
+
+.right::after {
+    left: -7.5vw;
+    top: -10vw;
+}
+
+.left::after {
+    display: none;
+}
+
+/* Container around content */
+.container {
+    margin: 0 0 0 4vw;
+    padding: 2.5vw;
+    position: relative;
+    width: 65vw;
+    top: -7vw;
+}
+
+.content {
+    margin: 0 0 0 4vw;
+    padding: 1vw;
+    position: relative;
 }
