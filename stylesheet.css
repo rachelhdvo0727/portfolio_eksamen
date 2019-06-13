@@ -1,0 +1,81 @@
+:root {
+    --main-bg-color: #171940;
+    --accent-color: #DFE0ED;
+    --shadow-circle-border: #838DEA;
+    --highlight-color: #F24C27;
+    font-size: 100%;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+}
+
+section {
+    margin: 0 auto;
+    max-width: none;
+}
+
+header {
+    text-align: right;
+    top: 0;
+    width: 3vw;
+}
+
+
+/*-----------------navigation menu-------------------*/
+
+#menu ul {
+    list-style-type: none;
+    margin: 2vw;
+    padding: 1vw;
+}
+
+#menu a {
+    font-size: 1.8vw;
+}
+
+
+/* unvisited link */
+
+header nav a:link {
+    color: var(--accent-color);
+}
+
+
+/* visited link */
+
+header nav a:visited {
+    color: #003e4c;
+}
+
+
+/* mouse over link */
+
+header nav a:hover {
+    text-decoration: underline;
+    color: var(--accent-color);
+}
+
+
+/* selected link */
+
+header nav a:active {
+    color: #003e4c;
+}
+
+#splash {
+    width: 100vw;
+    height: 177.8vw;
+    background-image: url(assets/splashbillede1.png);
+    background-size: cover;
+    background-position: 43% 40%;
+}
