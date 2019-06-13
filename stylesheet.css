@@ -4,15 +4,21 @@
     --shadow-circle-border: #838DEA;
     --highlight-color: #F24C27;
     font-size: 100%;
+    font-family: 'Bungee Shade', cursive;
+    font-family: 'Monoton', cursive;
+    font-family: 'Roboto', sans-serif;
 }
 
 a:link {
     text-decoration: none;
 }
 
+html,
 body {
     background-color: var(--main-bg-color);
     margin: 0 auto;
+    height: 100%;
+    overflow-x: hidden;
 }
 
 img {
@@ -27,54 +33,114 @@ section {
 header {
     text-align: right;
     top: 0;
-    width: 3vw;
+    height: 0;
+    width: 100%;
 }
 
 
 /*-----------------navigation menu-------------------*/
+#menu {
+    position: absolute;
+    background: rgb(23, 25, 64);
+    background: linear-gradient(187deg, rgba(23, 25, 64, 1) 0%, rgba(52, 55, 100, 1) 22%, rgba(163, 169, 235, 1) 54%, rgba(202, 205, 236, 0.7105217086834734) 95%);
+    opacity: 0.6;
+    width: 100%;
+    top: 0;
+    transition: transform .6s;
+    transform-origin: top left;
+}
 
 #menu ul {
     list-style-type: none;
+    margin: 15vw 10vw 5vw 5vw;
+    padding: 1.5vw;
+    text-align: ;
+}
+
+#menu a {
+    color: var(--accent-color);
+    font-size: 4.5vw;
+    font-family: 'Roboto', sans-serif;
+}
+
+#menu li {
     margin: 2vw;
     padding: 1vw;
 }
 
-#menu a {
-    font-size: 1.8vw;
+#menuknap {
+    display: inline-block;
+    z-index: 1;
 }
 
+.pos {
+    position: relative;
+    top: 3.5vw;
+    right: 2vw;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    z-index: 3;
+    box-sizing: border-box;
+    width: 7vw;
+    height: 1vw;
+    background-color: var(--main-bg-color);
+    margin-bottom: 1vw;
+    padding: 0.4vw;
+    border-radius: 0.4vw;
+}
+
+.hidden {
+    transform: translateX(100%);
+    transition: .10s;
+    visibility: collapse;
+    overflow: hidden;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    transform: rotate(-45deg) translate(-2vw, 1.5vw);
+    transition: .10s;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    transform: rotate(45deg) translate(-1vw, -1vw);
+    transition: .10s;
+}
 
 /* unvisited link */
-
-header nav a:link {
+nav a:link {
     color: var(--accent-color);
 }
-
 
 /* visited link */
-
-header nav a:visited {
-    color: #003e4c;
+nav a:visited {
+    color: var(--shadow-circle-border);
 }
-
 
 /* mouse over link */
-
-header nav a:hover {
+nav a:hover {
     text-decoration: underline;
-    color: var(--accent-color);
 }
-
 
 /* selected link */
-
-header nav a:active {
-    color: #003e4c;
+nav a:active {
+    color: black;
 }
 
+
+/*-----------------indhold-------------------*/
 #splash {
     width: 100vw;
-    height: 177.8vw;
+    height: 159.8vw;
     background-image: url(assets/splashbillede1.png);
     background-size: cover;
     background-position: 43% 40%;
