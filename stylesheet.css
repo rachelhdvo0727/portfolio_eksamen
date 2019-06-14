@@ -1,7 +1,8 @@
 :root {
-    --main-bg-color: #171940;
-    --accent-color: #DFE0ED;
-    --shadow-circle-border: #838DEA;
+    --main-bg-color: #DFE0ED;
+    --main-text-color: #0D0D0D;
+    --accent-color: #D1DAF2;
+    --button-color: #F2887E;
     --highlight-color: #F24C27;
     font-size: 100%;
     font-family: 'Bungee Shade', cursive;
@@ -44,14 +45,15 @@ h1 {
 }
 
 h2 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Monoton', cursive;
     color: var(--highlight-color);
-    font-size: 5vw;
+    font-size: 5.5vw;
+    font-variant: small-caps;
 }
 
 h3 {
     font-family: 'Roboto', sans-serif;
-    color: var(--accent-color);
+    color: var(--button-color);
     font-size: 3.5vw;
 }
 
@@ -76,6 +78,8 @@ h3 {
 
 #menu a {
     color: var(--accent-color);
+    font-weight: 700;
+    font-variant: small-caps;
     font-size: 4.5vw;
     font-family: 'Roboto', sans-serif;
 }
@@ -103,10 +107,11 @@ h3 {
     box-sizing: border-box;
     width: 7vw;
     height: 1vw;
-    background-color: var(--main-bg-color);
+    background-color: var(--button-color);
     margin-bottom: 1vw;
     padding: 0.4vw;
     border-radius: 0.4vw;
+    box-shadow: 0.2vw 0.2vw 1vw 0.1vw grey;
 }
 
 .hidden {
@@ -153,16 +158,17 @@ nav a:active {
     color: black;
 }
 
-
-/*-----------------indhold-------------------*/
+/*-----------------INDHOLD------------------*/
+/*-----------------SPLASH-------------------*/
 #splash {
     width: 100vw;
     height: 159.8vw;
-    background-image: url(assets/splashbillede1.png);
+    background-image: url(assets/splashbillede2.png);
     background-size: cover;
-    background-position: 45% 0%;
+    background-position: 45% 10%;
 }
 
+/*-----------------OM MIG-------------------*/
 #om {
     /*display: flex;
     flex-wrap: wrap;*/
@@ -173,13 +179,17 @@ nav a:active {
 
 #om p {
     font-family: 'Roboto', sans-serif;
-    color: var(--accent-color);
+    color: var(--main-text-color);
+}
+
+.timeline_wrapper {
+    margin: 3vw 0.5vw 3vw 0.5vw;
 }
 
 /* The actual timeline (the vertical ruler) */
 .timeline {
     position: relative;
-    max-width: 120vw;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -187,12 +197,12 @@ nav a:active {
 .timeline::after {
     content: '';
     position: absolute;
-    width: 6px;
-    background-color: #000000;
-    top: 0;
+    width: 0.9vw;
+    background-color: var(--accent-color);
+    top: 13vw;
     bottom: 0;
     left: 25vw;
-    margin-left: -3px;
+    margin-left: -1vw;
 }
 
 /* The circles on the timeline */
@@ -201,15 +211,15 @@ nav a:active {
     position: absolute;
     width: 5vw;
     height: 5vw;
-    right: 0vw;
-    background-color: var(--highlight-color);
-    border: 1vw solid #000000;
+    right: -1vw;
+    background-color: var(--button-color);
+    /*border: 1vw solid var(--button-color);*/
     top: 5vw;
     border-radius: 50%;
     z-index: 1;
 }
 
-/* Fix the circle for containers on the right side */
+/* Fix the circle for containers */
 .right {
     left: 25vw;
 }
@@ -237,7 +247,13 @@ nav a:active {
 }
 
 .content {
-    margin: 0 0 0 4vw;
+    margin: 0 2vw 0 0vw;
+    padding: 1vw;
+    position: relative;
+}
+
+.content_left {
+    margin: 0 0 0 1vw;
     padding: 1vw;
     position: relative;
 }
