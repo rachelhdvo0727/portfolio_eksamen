@@ -3,11 +3,11 @@
     --main-text-color: #0D0D0D;
     --accent-color: #D1DAF2;
     --button-color: #F2887E;
-    --highlight-color: #F24C27;
+    --highlight-color: #F23A29;
+    --highlight-dark-color: #171940;
     font-size: 100%;
-    font-family: 'Bungee Shade', cursive;
-    font-family: 'Monoton', cursive;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Fredericka the Great', cursive;
 }
 
 a:link {
@@ -34,25 +34,27 @@ section {
 header {
     text-align: right;
     top: 0;
-    height: 0;
+    /*height: 12vw;
+    background-color: blue;*/
     width: 100%;
+    position: fixed;
 }
 
 h1 {
-    font-family: 'Monoton', cursive;
+    font-family: 'Fredericka the Great', cursive;
     color: var(--highlight-color);
-    font-size: 7.5vw;
+    font-size: 8vw;
 }
 
 h2 {
-    font-family: 'Monoton', cursive;
+    font-family: 'Fredericka the Great', cursive;
     color: var(--highlight-color);
     font-size: 5.5vw;
-    font-variant: small-caps;
+    /*font-variant: small-caps;*/
 }
 
 h3 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: var(--button-color);
     font-size: 3.5vw;
 }
@@ -165,7 +167,7 @@ nav a:active {
     height: 159.8vw;
     background-image: url(assets/splashbillede2.png);
     background-size: cover;
-    background-position: 45% 10%;
+    background-position: 56% 10%;
 }
 
 /*-----------------OM MIG-------------------*/
@@ -178,8 +180,8 @@ nav a:active {
 }
 
 #om p {
-    font-family: 'Roboto', sans-serif;
-    color: var(--main-text-color);
+    font-family: 'Open Sans', sans-serif;
+    color: var(--highlight-dark-color);
 }
 
 .timeline_wrapper {
