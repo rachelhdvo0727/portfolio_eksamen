@@ -59,6 +59,14 @@ h3 {
     font-size: 3.5vw;
 }
 
+figcaption {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    font-size: 2.5vw;
+    color: var(--highlight-dark-color);
+}
+
 /*-----------------navigation menu-------------------*/
 #menu {
     position: absolute;
@@ -79,7 +87,7 @@ h3 {
 }
 
 #menu a {
-    color: var(--accent-color);
+    color: #D97ECA;
     font-weight: 700;
     font-variant: small-caps;
     font-size: 4.5vw;
@@ -109,7 +117,8 @@ h3 {
     box-sizing: border-box;
     width: 7vw;
     height: 1vw;
-    background-color: var(--button-color);
+    background-color: var(--highlight-dark-color);
+    opacity: 0.8;
     margin-bottom: 1vw;
     padding: 0.4vw;
     border-radius: 0.4vw;
@@ -142,7 +151,7 @@ h3 {
 
 /* unvisited link */
 nav a:link {
-    color: var(--accent-color);
+    color: #D97ECA;
 }
 
 /* visited link */
@@ -271,31 +280,4 @@ nav a:active {
 .tema {
     margin: 3vw;
     padding: 1.8vw;
-}
-
-button {
-    position: relative;
-    top: 10vw;
-    left: 10vw;
-}
-
-.button {
-    background-color: transparent;
-    border: none;
-    color: #d97eca;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 4.5vw;
-}
-
-.pil {}
-
-i {
-    border: solid #d97eca;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 1vw;
-}
-
-.hojre {
-    transform: rotate(-45deg);
 }
