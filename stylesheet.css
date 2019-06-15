@@ -260,14 +260,42 @@ nav a:active {
     position: relative;
 }
 
-/*-----------------PORTFOLIO-------------------*/
+/*-----------------PORTFOLIO_index.html-------------------*/
 .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
+    margin: 2vw;
+    padding: 1vw;
 }
 
-.tema_1 {
-    height: 20vw;
-    width: 40vw;
-    background-image: url(assets/basic_web_1.jpeg);
+.tema {
+    margin: 3vw;
+    padding: 1.8vw;
+}
+
+button {
+    position: relative;
+    top: 10vw;
+    left: 10vw;
+}
+
+.button {
+    background-color: transparent;
+    border: none;
+    color: #d97eca;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 4.5vw;
+}
+
+.pil {}
+
+i {
+    border: solid #d97eca;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 1vw;
+}
+
+.hojre {
+    transform: rotate(-45deg);
 }
