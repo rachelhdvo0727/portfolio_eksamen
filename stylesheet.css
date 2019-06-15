@@ -167,7 +167,7 @@ nav a:active {
     height: 159.8vw;
     background-image: url(assets/splashbillede2.png);
     background-size: cover;
-    background-position: 56% 10%;
+    background-position: 57% 0%;
 }
 
 /*-----------------OM MIG-------------------*/
@@ -258,4 +258,16 @@ nav a:active {
     margin: 0 0 0 1vw;
     padding: 1vw;
     position: relative;
+}
+
+/*-----------------PORTFOLIO-------------------*/
+.sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tema_1 {
+    height: 20vw;
+    width: 40vw;
+    background-image: url(assets/basic_web_1.jpeg);
 }
