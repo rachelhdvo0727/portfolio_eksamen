@@ -3,7 +3,9 @@ window.addEventListener("load", sidenVises);
 function sidenVises() {
     console.log("sidenVises");
 
-    document.querySelector("#menuknap").addEventListener("click", toggleMenu);
+    document.querySelector("#menuknap")
+        .addEventListener("click", toggleMenu);
+    document.querySelector(".tema").hover(temaZoomin);
 
 }
 
@@ -24,4 +26,10 @@ function toggleMenu() {
         document.querySelector("#menuknap")
             .classList.toggle("change");
     }
+}
+
+function temaZoomin() {
+    console.log("temaZoomin");
+
+    $(this).hover("zoomin");
 }
