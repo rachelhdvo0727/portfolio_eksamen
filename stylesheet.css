@@ -73,9 +73,6 @@ figcaption {
     color: var(--highlight-dark-color);
 }
 
-figure {
-    margin: 2vw 3vw 2vw 3vw;
-}
 
 /*-----------------burger menu-------------------*/
 #menu {
@@ -188,12 +185,36 @@ nav a:active {
 }
 
 /*-----------------OM MIG-------------------*/
-#om {
-    /*display: flex;
-    flex-wrap: wrap;*/
-    margin: 2vw 2vw 3vw 2vw;
+#om,
+#portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2.5vw;
     padding: 1.5vw;
+}
 
+#om.sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col_narrow {
+    flex-grow: 1;
+    flex-basis: 300px;
+    align-self: flex-start;
+    margin-right: 2vw;
+}
+
+.col_wide {
+    margin-left: 2vw;
+    flex-grow: 1;
+    flex-basis: 300px;
+    align-self: flex-start;
+}
+
+.collage {
+    margin-top: 2vw;
 }
 
 #om p {
@@ -208,8 +229,8 @@ nav a:active {
 /* The actual timeline (the vertical ruler) */
 .timeline {
     position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 800px;
+    margin: 2.5vw;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -233,7 +254,7 @@ nav a:active {
     right: -1vw;
     background-color: var(--button-color);
     /*border: 1vw solid var(--button-color);*/
-    top: 5vw;
+    top: 2vw;
     border-radius: 50%;
     z-index: 1;
 }
@@ -259,36 +280,53 @@ nav a:active {
 /* Container around content */
 .container {
     margin: 0 0 0 4vw;
-    padding: 2.5vw;
+    padding: 2vw;
     position: relative;
     width: 65vw;
     top: -7vw;
 }
 
 .content {
-    margin: 0 2vw 0 0vw;
+    top: -11.5vw;
     padding: 1vw;
     position: relative;
+
 }
 
 .content_left {
-    margin: 0 0 0 1vw;
     padding: 1vw;
+    top: 2vw;
     position: relative;
 }
 
 /*-----------------PORTFOLIO_index.html-------------------*/
-#portfolio,
-.sectionwrapper {
+#portfolio {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
+    margin: 2.5vw;
+    padding: 1.5vw;
+}
+
+.sectionwrapper_top {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 2vw;
+    padding: 1vw;
+}
+
+.sectionwrapper_bottom {
+    display: flex;
+    flex-flow: row-reverse wrap;
     margin: 2vw;
     padding: 1vw;
 }
 
 .tema {
+    flex-grow: 1;
+    flex-basis: 300px;
     margin: 3vw;
     padding: 1.8vw;
+
 }
 
 /*-----------------TEMA 1_gweb.html-------------------*/
@@ -337,6 +375,10 @@ nav a:active {
         height: 158.8vw;
         background-position: 0% 0%;
     }
+
+    figure {
+        margin: 1.5vw 3vw;
+    }
 }
 
 @media only screen and (min-width:1000px) {
@@ -355,12 +397,13 @@ nav a:active {
     }
 
     #menu li {
-        margin: 0 1vw 0 85vw;
+        margin: 0.5vw 1vw 0 85vw;
         padding: 0;
     }
 
     #menu a {
         font-size: 1.7vw;
+        font-weight: bold;
         font-variant: small-caps;
         color: var(--highlight-color);
     }
@@ -375,6 +418,14 @@ nav a:active {
         height: 100%;
     }
 
+    .collage {
+        margin: 2vw 5vw 2vw 10vw;
+    }
+
+    figcaption {
+        font-size: 01vw;
+    }
+
     h1 {
         font-size: 4.5vw;
     }
@@ -383,16 +434,37 @@ nav a:active {
         font-size: 3vw;
     }
 
+    h3 {
+        font-size: 2vw;
+    }
+
     p {
-        font-size: 1.8vw;
+        font-size: 1.5vw;
     }
 
-    figcaption {
-        font-size: 1.2vw;
+    .timeline {
+        margin: 3.5vw;
     }
 
-    figure {
-        margin: 6vw;
+    .timeline::after {
+        left: 16vw;
     }
 
+    .container::after {
+        width: 2.5vw;
+        height: 2.5vw;
+    }
+
+    .right::after {
+        left: -15.3vw;
+        top: 0;
+    }
+
+    .content {
+        top: 2vw;
+    }
+
+    .content_left {
+        top: 7vw;
+    }
 }
