@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="da">
+
 <head>
     <title>Portefølje - Grundlæggende Web</title>
     <meta charset="utf-8">
@@ -13,20 +14,23 @@
 
 <body>
     <header>
-        <div id="menuknap" class="pos">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-        </div>
-        <nav>
-            <div id="menu" class="hidden">
-                <ul>
-                    <li><a href="index.html#splash">Hjem</a></li>
-                    <li><a href="index.html#om">Om</a></li>
-                    <li><a href="index.html#portfolio">Porteføjle</a></li>
-                </ul>
+        <div class="topnav" id="myTopnav">
+            <a href="#home" class="active">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <div class="dropdown">
+                <button class="dropbtn">Dropdown
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
             </div>
-        </nav>
+            <a href="#about">About</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
     </header>
     <section id="gweb">
         <h1>Grundlæggende Web</h1>
@@ -51,7 +55,7 @@
             <div class="col text">
                 <!--en kort beskrivelse af dit projekt/ opgaves fokus
                hvad var din rolle? hvad lærte du?-->
-                <p>Under opsætning af websitet i HTML og CSS, lærte jeg at udnytte margener og padding'er til at justere og placere forskellige elementer på både en mobiltelefones skærm og en laptops skærm.</p>
+                <p>Under opsætning af websitet i HTML og CSS, lærte jeg at udnytte margener og padding'er, samt CSS flexboxes til at justere og placere forskellige elementer på både en mobiltelefones skærm og en laptops skærm.</p>
             </div>
             <div class="col image">
                 <figure>
@@ -62,4 +66,6 @@
             <a href="http://vo-consult.com/kea/01-web/04-responsive/01_04_02_responsive_site_v2/index.html#splash">Klik her for at se websitet <i class="pil_right"></i></a>
         </div>
     </section>
-</body></html>
+</body>
+
+</html>
