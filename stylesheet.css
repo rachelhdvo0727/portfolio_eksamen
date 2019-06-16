@@ -185,36 +185,27 @@ nav a:active {
 }
 
 /*-----------------OM MIG-------------------*/
-#om,
-#portfolio {
+#om {
     display: flex;
     flex-wrap: wrap;
     margin: 2.5vw;
     padding: 1.5vw;
 }
 
-#om.sectionwrapper {
+#om .sectionwrapper {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: wrap row;
     justify-content: space-between;
 }
 
-.col_narrow {
+.col_left,
+.col_right {
     flex-grow: 1;
     flex-basis: 300px;
-    align-self: flex-start;
-    margin-right: 2vw;
 }
 
-.col_wide {
-    margin-left: 2vw;
-    flex-grow: 1;
-    flex-basis: 300px;
-    align-self: flex-start;
-}
-
-.collage {
-    margin-top: 2vw;
+figure .collage {
+    margin-top: 3vw;
 }
 
 #om p {
@@ -332,7 +323,7 @@ nav a:active {
     transition: transform .2s;
 }
 
-img.behind {
+.behind {
     box-shadow: 2vw 2vw 8vw grey;
     border-radius: 50%;
 }
@@ -428,10 +419,6 @@ img.behind {
     #splash {
         width: 100%;
         height: 100%;
-    }
-
-    .collage {
-        margin: 2vw 5vw 2vw 10vw;
     }
 
     figcaption {

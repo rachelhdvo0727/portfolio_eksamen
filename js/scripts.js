@@ -5,8 +5,6 @@ function sidenVises() {
 
     document.querySelector("#menuknap")
         .addEventListener("click", toggleMenu);
-    document.querySelector(".tema").hover(temaZoomin);
-
 }
 
 function toggleMenu() {
@@ -26,10 +24,4 @@ function toggleMenu() {
         document.querySelector("#menuknap")
             .classList.toggle("change");
     }
-}
-
-function temaZoomin() {
-    console.log("temaZoomin");
-
-    $(this).hover("zoomin");
 }
