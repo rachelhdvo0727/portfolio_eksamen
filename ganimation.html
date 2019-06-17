@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="da">
+
 <head>
     <title>Portefølje - Grundlæggende Animation</title>
     <meta charset="utf-8">
@@ -20,11 +21,18 @@
         </div>
         <nav>
             <div id="menu" class="hidden">
-                <ul>
-                    <li><a href="index.html#splash" id="gem_menu">Hjem</a></li>
-                    <li><a href="index.html#om" id="gem_menu">Om</a></li>
-                    <li><a href="index.html#portfolio" id="gem_menu">Porteføjle</a></li>
-                </ul>
+                <div class="menu_item"><a href="index.html#splash">Hjem</a></div>
+                <div class="menu_item"><a href="index.html#om">Om</a></div>
+                <div class="menu_item">
+                    <button onclick="showPortfolio()" class="dropbutton">
+                        <a href="index.html#portfolio">Porteføjle</a><i class="fas fa-caret-down"></i>
+                    </button>
+                    <div id="dropdown" class="drop_content">
+                        <a href="gweb.html">Art Deco</a>
+                        <a href="ganimation.html">Beys Praktikant</a>
+                        <a href="gindhold.html">Crossfit Delta Kilo</a>
+                        <a href="gux.html">KEA Redesign</a></div>
+                </div>
             </div>
         </nav>
     </header>
@@ -46,4 +54,6 @@
             </a>
         </div>
     </div>
-</body></html>
+</body>
+
+</html>

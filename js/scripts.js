@@ -1,11 +1,12 @@
 window.addEventListener("load", sidenVises);
 
-
 function sidenVises() {
     console.log("sidenVises");
 
     document.querySelector("#menuknap")
         .addEventListener("click", toggleMenu);
+    document.querySelector("#dropdown")
+        .addEventListener("click", showPortfolio);
 
 }
 
@@ -25,4 +26,11 @@ function toggleMenu() {
         document.querySelector("#menuknap")
             .classList.toggle("change");
     }
+}
+
+function showPortfolio() {
+    console.log("showPortforlio");
+
+    document.querySelector(".drop_content").classList.add("show");
+
 }
