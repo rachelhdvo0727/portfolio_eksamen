@@ -2,7 +2,7 @@
     --main-bg-color: #DFE0ED;
     --main-text-color: #0D0D0D;
     --accent-color: #653AD8;
-    --button-color: #F2887E;
+    /*--button-color: #F2887E;*/
     --highlight-color: #F23A29;
     --highlight-dark-color: #171940;
     font-size: 100%;
@@ -43,24 +43,25 @@ header {
 
 h1 {
     font-family: 'Fredericka the Great', cursive;
-    color: var(--highlight-color);
+    color: var(--hightlight-dark-color);
     font-size: 8vw;
 }
 
 h2 {
     font-family: 'Fredericka the Great', cursive;
-    color: var(--highlight-color);
+    color: var(--hightlight-dark-color);
     font-size: 4.5vw;
     /*font-variant: small-caps;*/
 }
 
 h3 {
     font-family: 'Open Sans', sans-serif;
-    color: var(--button-color);
+    color: var(--highlight-color);
     font-size: 3vw;
 }
 
-p {
+p,
+.wrapper a {
     font-family: 'Open Sans', sans-serif;
     color: var(--highlight-dark-color);
     font-size: 2.5vw;
@@ -248,7 +249,7 @@ figure .collage {
     width: 5vw;
     height: 5vw;
     right: -1vw;
-    background-color: var(--button-color);
+    background-color: var(--highlight-color);
     /*border: 1vw solid var(--button-color);*/
     top: 2vw;
     border-radius: 50%;
@@ -338,14 +339,22 @@ figure .collage {
 #gweb {
     display: flex;
     flex-wrap: wrap;
-    margin: 6vw 1vw 2vw 1vw;
+    margin: 6vw 2vw 2vw 1vw;
     padding: 1vw;
 }
 
-.wrapper {
+.wrapper_top {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    margin: 2vw;
+    padding: 1.3vw;
+}
+
+.wrapper_bottom {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
     margin: 2vw;
     padding: 1.3vw;
 }
@@ -355,23 +364,15 @@ figure .collage {
     flex-basis: 300px;
 }
 
-.wrapper a {
-    color: var(--highlight-color);
-    font-family: 'Open Sans', sans-serif;
-    font-size: 4vw;
+.link_img {
+    transition: transform .2s;
 }
 
-.wrapper a:hover {
-    text-decoration: underline;
+.link_img img:hover {
+    box-shadow: 2vw 2vw 5vw #a3a9eb;
+    transform: scale(1.2);
 }
 
-.pil_right {
-    border: solid var(--highlight-color);
-    border-width: 0 0.3vw 0.3vw 0;
-    display: inline-block;
-    padding: 1vw;
-    transform: rotate(-45deg);
-}
 
 /*-----------------STORE SKÆRME-------------------*/
 @media only screen and(min-width: 600px) {
@@ -421,7 +422,7 @@ figure .collage {
     #menu a {
         font-size: 1.5vw;
         font-weight: 700;
-        color: var(--highlight-color);
+        color: var(--hightlight-dark-color);
     }
 
     li #gem_menu {
