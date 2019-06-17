@@ -366,15 +366,28 @@ figure .collage {
     margin: 1.5vw;
 }
 
+.image img {
+    border-radius: 2vw;
+}
+
 .link_img {
     transition: transform .2s;
 }
 
 .link_img img:hover {
-    box-shadow: 2vw 2vw 5vw #a3a9eb;
+    box-shadow: 2vw 2vw 4vw #a3a9eb;
     transform: scale(1.2);
 }
 
+/*-----------------TEMA 2_ganimation.html-------------------*/
+#wrapper {
+    margin: 6vw 2vw 2vw 1vw;
+    padding: 1vw;
+}
+
+.row {
+    margin: 4.5vw 7vw 0 7vw;
+}
 
 /*-----------------STORE SKÆRME-------------------*/
 @media only screen and(min-width: 600px) {
@@ -390,6 +403,12 @@ figure .collage {
 }
 
 @media only screen and (min-width:1000px) {
+
+    #wrapper,
+    #gweb {
+        margin: 6vw 2vw 2vw 1vw;
+    }
+
     header {
         position: relative;
         background: transparent;
@@ -496,5 +515,9 @@ figure .collage {
 
     .content_left {
         top: 7vw;
+    }
+
+    .link_img img:hover {
+        transform: scale(1.1);
     }
 }
