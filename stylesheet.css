@@ -44,7 +44,7 @@ header {
 h1 {
     font-family: 'Fredericka the Great', cursive;
     color: var(--hightlight-dark-color);
-    font-size: 8vw;
+    font-size: 7vw;
 }
 
 h2 {
@@ -340,7 +340,7 @@ figure .collage {
 #gweb {
     display: flex;
     flex-wrap: wrap;
-    margin: 6vw 2vw 2vw 1vw;
+    margin: 6.5vw 2vw 2vw 1vw;
     padding: 1vw;
 }
 
@@ -381,11 +381,16 @@ figure .collage {
 
 /*-----------------TEMA 2_ganimation.html-------------------*/
 #wrapper {
-    margin: 6vw 2vw 2vw 1vw;
+    margin: 6.5vw 3vw 0vw 3vw;
     padding: 1vw;
 }
 
-.row {
+.bottom_spil {
+    margin: 4.5vw 7vw 0 7vw;
+}
+
+/*-----------------TEMA 3_gindhold.html-------------------*/
+.crossfit_web {
     margin: 4.5vw 7vw 0 7vw;
 }
 
