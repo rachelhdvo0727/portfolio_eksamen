@@ -401,6 +401,7 @@ figure .collage {
     }
 
     #menu {
+        opacity: 1;
         position: fixed;
         background: transparent;
     }
@@ -412,14 +413,19 @@ figure .collage {
 
     #menu li {
         opacity: 1;
-        margin: 0.5vw 1vw 0 85vw;
+        margin: 0.5vw 0.5vw 1.5vw 85vw;
         padding: 0;
     }
 
     #menu a {
         font-size: 1.5vw;
-        font-weight: 700;
+        font-weight: bolder;
         color: var(--highlight-color);
+    }
+
+    li #gem_menu {
+        text-decoration: underline;
+        border-radius: 0.3vw;
     }
 
     .hidden {
