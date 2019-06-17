@@ -57,6 +57,7 @@ h2 {
 h3 {
     font-family: 'Open Sans', sans-serif;
     color: var(--highlight-color);
+    opacity: 0.8;
     font-size: 3vw;
 }
 
