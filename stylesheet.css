@@ -430,6 +430,7 @@ figure .collage {
     transform: scale(1.2);
 }
 
+
 /*-----------------TEMA 2_ganimation.html-------------------*/
 #wrapper {
     margin: 4.5vw 3vw 0vw 3vw;
@@ -445,10 +446,68 @@ figure .collage {
     margin: 4.5vw 7vw 0 7vw;
 }
 
+
 /*-----------------TEMA 3_gindhold.html-------------------*/
-.crossfit_web {
+.row_wrapper {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: space-between;
+    margin: 1.2vw;
+}
+
+.row_right {
+    flex-grow: 1;
+    flex-basis: 300px;
+    align-self: stretch;
+}
+
+.row_left {
+    flex-grow: 1;
+    flex-basis: 300px;
+    align-self: flex-start;
+    padding: 0.8vw;
+    margin-right: 1.4vw;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+.video-container {
+    position: relative;
+    display: flex;
+}
+
+
+.video-container:hover .video-controls {
+    opacity: .9;
+}
+
+
+button {
+    background: rgba(0, 0, 0, .5);
+    border: 0;
+    color: #EEE;
+    border-radius: 3px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#seek-bar {
+    width: 360px;
+}
+
+#volume-bar {
+    width: 60px;
+}
+
+.crossfit_webimage {
     margin: 4.5vw 7vw 0 7vw;
 }
+
 
 /*-----------------STORE SKÆRME-------------------*/
 @media only screen and(min-width: 600px) {
