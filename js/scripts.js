@@ -6,6 +6,9 @@ function sidenVises() {
     //burgermenu
     document.querySelector("#menuknap").addEventListener("click", toggleMenu);
 
+    function goBack() {
+        window.history.back();
+    }
     // Video
     //var video = document.querySelector("#video");
     // Buttons

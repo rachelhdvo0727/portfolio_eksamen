@@ -1,5 +1,5 @@
 :root {
-    --main-bg-color: #DFE0ED;
+    --main-bg-color: #dfe0ed;
     --main-text-color: #0D0D0D;
     --accent-color: #653AD8;
     --accent-color-2: #D97ECA;
@@ -75,13 +75,7 @@ figcaption {
     font-family: 'Open Sans', sans-serif;
     font-style: italic;
     font-size: 2.3vw;
-    color: var(--accent-color-2);
-}
-
-#title {
-    position: absolute;
-    left: 0;
-    top: 0;
+    color: var(--highlight-dark-color);
 }
 
 /*-----------------burger menu-------------------*/
@@ -183,13 +177,13 @@ figcaption {
 
 
 /*-----------------INDHOLD------------------*/
-/*-----------------SPLASH-------------------*/
+/*-----------------SPLASHBILLEDE-------------------*/
 #splash {
     width: 100vw;
     height: 160.8vw;
-    background-image: url(assets/splashbillede2.png);
+    background-image: url(assets/portfolio_splash_ny-assets/portfolio_splash_1.png);
     background-size: cover;
-    background-position: 57% 0%;
+    background-position: 55% 0%;
 }
 
 /*-----------------OM MIG-------------------*/
@@ -204,6 +198,7 @@ figcaption {
     display: flex;
     flex-flow: wrap row;
     justify-content: space-between;
+
 }
 
 .col_left,
@@ -308,8 +303,11 @@ figure .collage {
 #portfolio {
     display: flex;
     flex-flow: row wrap;
-    margin: 2.5vw;
     padding: 1.5vw;
+    background-image: url(assets/portfolio_splash_ny-assets/portfolio_splash_4.png);
+    background-size: cover;
+    background-position: 55% 0%;
+    width: auto;
 }
 
 .sectionwrapper_top {
@@ -345,20 +343,53 @@ figure .collage {
 
 
 /*-----------------SEKTIONERS STYLING-------------------*/
-#gweb,
 #gux {
     display: flex;
     flex-wrap: wrap;
-    margin: 6.5vw 2vw 2vw 1vw;
-    padding: 1vw;
+
 }
 
-#ganimation,
-#gindhold {
+#gweb {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 6.5vw 1vw 2vw 1vw;
+    padding: 1vw;
+    background-image: url(assets/portfolio_splash_ny-assets/portfolio_splash_2.png);
+    background-size: cover;
+    width: auto;
+    background-position: 55% 0%;
+
+}
+
+#ganimation {
+    display: flex;
+    flex-wrap: wrap;
     margin: 4.5vw 3vw 0vw 3vw;
     padding: 1vw;
+    background-image: url(assets/portfolio_splash_ny-assets/portfolio_splash_3.png);
+    background-size: cover;
+    background-position: 55% 0%;
 }
 
+#gindhold {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4.5vw 3vw 0vw 3vw;
+    padding: 1vw;
+    background-image: url(assets/portfolio_splash_ny-assets/portfolio_splash_2.png);
+    background-size: cover;
+    background-position: 55% 0%;
+}
+
+#gux {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4.5vw 3vw 0vw 3vw;
+    padding: 1vw;
+    background-image: url(assets/portfolio_splash_ny-assets/portfolio_splash_4.png);
+    background-size: cover;
+    background-position: 55% 0%;
+}
 
 /*-----------------TEMA 1_gweb.html-------------------*/
 .wrapper_webtop {
@@ -503,13 +534,15 @@ button:hover {
 
 .col_uximage {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
 
-.prototype_col {
+.prototype_coltop,
+.prototype_colbottom {
     margin: 2vw 4vw;
     flex-grow: 1;
-    flex-basis: 150px;
+    flex-basis: 300px;
 }
 
 .try_prototype a {
@@ -523,10 +556,10 @@ button:hover {
 }
 
 i {
-    border: 0.2vw solid var(--accent-color-2);
+    border: 1vw solid var(--accent-color-2);
     border-width: 0 0.2vw 0.2vw 0;
     display: inline-block;
-    padding: 0.3vw;
+    padding: 0.8vw;
 }
 
 .hojre,
@@ -561,11 +594,13 @@ i {
     }
 
     #menu a {
+        color: purple;
+        font-weight: 700;
+        font-variant: small-caps;
         margin-top: 1vw;
         margin-bottom: 0;
         padding-right: 1vw;
-        font-size: 1.3vw;
-        font-weight: 400;
+        font-size: 1.5vw;
         /*font-variant: small-caps;*/
         text-decoration: underline;
     }
@@ -682,5 +717,14 @@ i {
 
     .link_img img:hover {
         transform: scale(1.1);
+    }
+
+    i {
+        padding: 0.3vw;
+    }
+
+    .prototype_coltop,
+    .prototype_colbottom {
+        flex-basis: 100px;
     }
 }
