@@ -335,15 +335,25 @@ figure .collage {
     transform: scale(1.2);
 }
 
-/*-----------------TEMA 1_gweb.html-------------------*/
-#gweb {
+
+/*-----------------SEKTIONERS STYLING-------------------*/
+#gweb,
+#gux {
     display: flex;
     flex-wrap: wrap;
     margin: 6.5vw 2vw 2vw 1vw;
     padding: 1vw;
 }
 
-.wrapper_top {
+#ganimation,
+#gindhold {
+    margin: 4.5vw 3vw 0vw 3vw;
+    padding: 1vw;
+}
+
+
+/*-----------------TEMA 1_gweb.html-------------------*/
+.wrapper_webtop {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -351,7 +361,7 @@ figure .collage {
     padding: 1.3vw;
 }
 
-.wrapper_bottom {
+.wrapper_webbottom {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row-reverse;
@@ -381,14 +391,8 @@ figure .collage {
 
 
 /*-----------------TEMA 2_ganimation.html-------------------*/
-#ganimation,
-#gindhold {
-    margin: 4.5vw 3vw 0vw 3vw;
-    padding: 1vw;
-}
-
-.wrapper_top,
-.wrapper_bottom {
+.wrapper_anitop,
+.wrapper_anibottom {
     margin: 1.2vw;
 }
 
@@ -459,6 +463,52 @@ button:hover {
     margin: 4.5vw 7vw 0 7vw;
 }
 
+
+/*-----------------TEMA 4_gux.html-------------------*/
+.wrapper_uxtop {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col_image {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.prototype_col {
+    margin: 2vw 4vw;
+    flex-grow: 1;
+    flex-basis: 250px;
+}
+
+.try_prototype {
+    border-radius: 30vw;
+    background-color: transparent;
+}
+
+.try_prototype a {
+    font-weight: 600;
+}
+
+.try_prototype:visited {
+    color: var(--accent-color-2);
+}
+
+.try_prototype:hover {
+    text-decoration: underline;
+}
+
+i {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.hojre {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
 
 /*-----------------STORE SKÆRME-------------------*/
 @media only screen and(min-width: 600px) {
@@ -546,7 +596,8 @@ button:hover {
         font-size: 2vw;
     }
 
-    p {
+    p,
+    .try_prototype a {
         font-size: 1.5vw;
     }
 
@@ -576,11 +627,11 @@ button:hover {
         top: 7vw;
     }
 
-    .wrapper_top,
+    /*.wrapper_top,
     .row_wrapper {
         margin: 2vw;
         padding: 1vw 6.5vw 1vw 4vw;
-    }
+    }*/
 
     .row_right {
         margin-left: 2vw;
@@ -589,4 +640,5 @@ button:hover {
     .link_img img:hover {
         transform: scale(1.1);
     }
+
 }
