@@ -3,6 +3,7 @@
     --main-text-color: #0D0D0D;
     --accent-color: #653AD8;
     --accent-color-2: #D97ECA;
+    --accent-color-3: #f5c6ed;
     --highlight-color: #F23A29;
     --highlight-dark-color: #171940;
     font-size: 100%;
@@ -32,8 +33,8 @@ section {
 }
 
 header {
-    background: rgb(103, 113, 221);
-    background: linear-gradient(180deg, rgba(103, 113, 221, 1) 0%, rgba(163, 169, 235, 1) 42%, rgba(199, 202, 236, 0.5592612044817927) 91%);
+    background-color: var(--highlight-dark-color);
+    opacity: 0.9;
     text-align: right;
     top: 0;
     height: 12vw;
@@ -126,12 +127,10 @@ figcaption {
     box-sizing: border-box;
     width: 7vw;
     height: 1vw;
-    background-color: var(--highlight-dark-color);
-    opacity: 0.8;
+    background-color: var(--accent-color-3);
     margin-bottom: 1vw;
     padding: 0.4vw;
     border-radius: 0.4vw;
-    box-shadow: 0.2vw 0.2vw 1vw 0.1vw grey;
 }
 
 .hidden {
@@ -172,7 +171,7 @@ figcaption {
 /* selected link */
 #menu a:hover,
 #menu a:active {
-    color: white;
+    color: var(--accent-color-3);
     transform: scale(1.5);
 }
 
@@ -223,7 +222,6 @@ figure .collage {
 
 /* The actual timeline (the vertical ruler) */
 .timeline {
-    background-color: rgba(217, 126, 202, 0.17);
     border-radius: 2vw;
     position: relative;
     width: 83vw;
@@ -367,7 +365,8 @@ figure .collage {
     margin: 1.5vw;
 }
 
-.image img {
+.image img,
+.crossfit_webimage img {
     border-radius: 2vw;
 }
 
@@ -382,7 +381,8 @@ figure .collage {
 
 
 /*-----------------TEMA 2_ganimation.html-------------------*/
-#wrapper {
+#ganimation,
+#gindhold {
     margin: 4.5vw 3vw 0vw 3vw;
     padding: 1vw;
 }
@@ -398,6 +398,7 @@ figure .collage {
 
 
 /*-----------------TEMA 3_gindhold.html-------------------*/
+
 .row_wrapper {
     display: flex;
     flex-flow: row-reverse wrap;
@@ -491,31 +492,22 @@ button:hover {
     }
 
     #menu {
-        opacity: 1;
         position: fixed;
         background: transparent;
-    }
-
-    #menu ul {
-        margin: 0;
-        padding: 1vw;
-    }
-
-    #menu li {
-        opacity: 1;
-        margin: 0.5vw 0.5vw 1.5vw 85vw;
-        padding: 0;
+        align-items: flex-end;
     }
 
     #menu a:hover {
+        color: var(--highlight-dark-color);
         transform: scale(1.3, 1.3);
     }
 
     #menu a {
+        margin-top: 1.5vw;
+        margin-bottom: 0;
+        padding-right: 1.5vw;
         font-size: 2vw;
-        font-weight: 700;
         font-variant: small-caps;
-        color: var(--hightlight-dark-color);
     }
 
     .hidden {
@@ -582,6 +574,16 @@ button:hover {
 
     .content_left {
         top: 7vw;
+    }
+
+    .wrapper_top,
+    .row_wrapper {
+        margin: 2vw;
+        padding: 1vw 6.5vw 1vw 4vw;
+    }
+
+    .row_right {
+        margin-left: 2vw;
     }
 
     .link_img img:hover {
