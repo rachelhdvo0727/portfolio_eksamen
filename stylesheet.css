@@ -2,7 +2,7 @@
     --main-bg-color: #DFE0ED;
     --main-text-color: #0D0D0D;
     --accent-color: #653AD8;
-    /*--button-color: #F2887E;*/
+    --accent-color-2: #D97ECA;
     --highlight-color: #F23A29;
     --highlight-dark-color: #171940;
     font-size: 100%;
@@ -79,75 +79,33 @@ figcaption {
 
 /*-----------------burger menu-------------------*/
 #menu {
-    position: absolute;
-    /*display: inline-block;*/
-    background-color: aqua;
-    width: 100%;
-    height: 80vw;
-    top: 0;
+    /*parent til links*/
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: space-around;
+    align-items: center;
+    /*priority*/
     z-index: 1;
-    line-height: 12vw;
-    text-align: right;
-    padding-top: 12vw;
+    position: absolute;
+    background: rgb(103, 113, 221);
+    background: linear-gradient(180deg, rgba(103, 113, 221, 1) 0%, rgba(163, 169, 235, 1) 49%, rgba(202, 205, 236, 0.7217261904761905) 100%);
+    width: 100%;
+    top: 0;
     transition: transform .6s;
     transform-origin: top left;
 }
 
-#menu ul {
-    list-style-type: none;
-    margin: 15vw 10vw 5vw 5vw;
-    padding: 1.5vw;
-    text-align: right;
-}
-
-#menu li {
-    margin: 2vw;
-    padding: 1vw;
-}
-
-/*.menu_item {
-    margin-right: 10vw;
-}
-
-button {
-    background-color: transparent;
-}
-
-.dropbutton {
-    color: white;
-    padding: inherit;
-    border: none;
-    cursor: pointer;
-}
-
-.drop_content {
-    display: none;
-    position: absolute;
-    width: 100%;
-    background-color: #f1f1f1;
-}
-
-.drop_content a {
-    display: block;
-    line-height: 10vw;
-    margin-right: 16vw;
-}
-
-.fa-caret-down {
-    float: right;
-    margin: 2vw;
-}
-
-.fa-caret-down::before {
-    content: '\f0d7';
-    margin: 0.4vw;
-}*/
-
 #menu a {
-    color: white;
-    font-weight: 700;
+    margin-top: 10vw;
+    margin-bottom: 3vw;
+    font-weight: 600;
     font-size: 4.5vw;
     font-family: 'Open Sans', sans-serif;
+    color: var(--highlight-dark-color);
+}
+
+.item_top {
+    margin-top: 5vw;
 }
 
 #menuknap {
@@ -202,30 +160,22 @@ button {
 
 /* unvisited link */
 #menu a:link {
-    color: var(--main-bg-color);
+    color: var(--highlight-dark-color);
 }
 
 /* visited link */
 #menu a:visited {
-    color: var(--highlight-dark-color);
+    color: var(--accent-color-2);
 }
 
 /* mouse over link */
 /* selected link */
 #menu a:hover,
-#menu a:active,
-#dropdown a:hover {
-    color: var(--highlight-color);
-}
-
-.show {
-    display: block;
-}
-
-.active {
-    background-color: green;
+#menu a:active {
     color: white;
+    transform: scale(1.5);
 }
+
 
 /*-----------------INDHOLD------------------*/
 /*-----------------SPLASH-------------------*/
@@ -511,6 +461,7 @@ button:hover {
 
 /*-----------------STORE SKÆRME-------------------*/
 @media only screen and(min-width: 600px) {
+
     #splash {
         width: 100vw;
         height: 158.8vw;
