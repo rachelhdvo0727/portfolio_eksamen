@@ -432,8 +432,13 @@ figure .collage {
 
 /*-----------------TEMA 2_ganimation.html-------------------*/
 #wrapper {
-    margin: 6.5vw 3vw 0vw 3vw;
+    margin: 4.5vw 3vw 0vw 3vw;
     padding: 1vw;
+}
+
+.wrapper_top,
+.wrapper_bottom {
+    margin: 1.2vw;
 }
 
 .bottom_spil {
