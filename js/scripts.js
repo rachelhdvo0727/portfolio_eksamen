@@ -6,6 +6,9 @@ function sidenVises() {
     //burgermenu
     document.querySelector("#menuknap").addEventListener("click", toggleMenu);
 
+    //dropdown button
+    //document.querySelector(".dropdown-knap").addEventListener("click", dropPortfolio);
+
     // Video
     //var video = document.querySelector("#video");
 

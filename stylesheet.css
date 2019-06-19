@@ -80,11 +80,15 @@ figcaption {
 
 /*-----------------burger menu-------------------*/
 #menu {
-    /*parent til links*/
+    /*display: inline-block;
+    position: absolute;*/
     display: flex;
     flex-flow: wrap column;
     align-items: center;
-    /*priority*/
+    /*top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;*/
     z-index: 1;
     position: absolute;
     background: rgb(103, 113, 221);
@@ -174,11 +178,11 @@ figcaption {
     transform: scale(1.5);
 }
 
-.dropdown-knap {
+/*.dropdown-knap {
     background-color: transparent;
     border: none;
     margin-top: 8vw;
-}
+}*/
 
 .down {
     border: 1vw solid var(--highlight-dark-color);
@@ -191,6 +195,10 @@ figcaption {
     display: flex;
     flex-flow: column wrap;
     justify-content: flex-end;
+    /* display: none;*/
+    margin-right: -10vw;
+    line-height: 1vw;
+    margin-bottom: 3vw;
 }
 
 /*-----------------INDHOLD------------------*/
@@ -642,6 +650,18 @@ i {
     .hidden {
         transform: none;
         visibility: visible;
+    }
+
+    /*.dropdown-knap {
+        margin-top: 0.6vw;
+    }*/
+
+    .down {
+        display: none;
+    }
+
+    .portfolio-container {
+        display: none;
     }
 
     #home {
