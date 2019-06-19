@@ -6,13 +6,12 @@ function sidenVises() {
     //burgermenu
     document.querySelector("#menuknap").addEventListener("click", toggleMenu);
 
-    function goBack() {
-        window.history.back();
-    }
     // Video
     //var video = document.querySelector("#video");
+
     // Buttons
     ////var playButton = document.querySelector("#play-pause");
+
     //var muteButton = document.querySelector("#mute");
     ////var fullScreenButton = document.querySelector("#full-screen");
 
